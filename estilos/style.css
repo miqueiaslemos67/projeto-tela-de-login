@@ -10,7 +10,7 @@
 
 :root {
     --cor00: #4aaca8;
-    --cor01: #176cec;
+    --cor01: #052d68;
 }
 
 * {
@@ -62,4 +62,13 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 1.6rem;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+div#formulario > p {
+    font-size: 0.9em;
 }
