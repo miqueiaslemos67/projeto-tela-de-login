@@ -1,6 +1,6 @@
 @charset "UTF-08";
 
-/* Mobile first */
+/* Mobile first - Style Principal */
 
 /* 
     Paleta de cores
@@ -9,105 +9,143 @@
 */
 
 :root {
-    --cor00: #4aaca8;
-    --cor01: #052d68;
+  --cor00: #4aaca8;
+  --cor01: #052d68;
 }
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-body, html {
-    background-color: var(--cor01);
-    height: 100vh;
-    width: 100vw;
+body,
+html {
+  background-color: var(--cor01);
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Container do login*/
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    
-    background-color: #f0f8ff;
-    width: 15.60rem;
-    height: 31rem;
-    border-radius: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+  background-color: #f0f8ff;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
 
-    transition: width .5s, heigth .5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
 
+  transition: width 0.5s, heigth 0.5s;
 }
 
 section#login > div#imagem {
-    background: var(--cor01) url(../imgs/imge.jpg) no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    height: 200px;
+  background: var(--cor01) url(../imgs/imge.jpg) no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  height: 200px;
 }
 
 section#login > div#formulario {
-    display: block;
-    padding: 1.6rem;
+  display: block;
+  padding: 10px;
 }
 
 div#formulario > h1 {
-    text-align: center;
-    margin-bottom: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 div#formulario > p {
-    font-size: 0.9em;
+  font-size: 0.8em;
 }
 
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #052d68;
-    color: rgb(178, 184, 180);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+form > div.campo {
+  background-color: #6433a5;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 0px;
 }
 
-form > input[type=submit]:hover {
-    background-color: #07152c;
+div.campo > label {
+  display: none;
+}
+
+/* config. dos ICONS */
+div.campo > span {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+/* conifg. dos inputs (usuário e senha)*/
+div.campo > input {
+  background-color: #d2dbe7;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  transform: translateY(-10.4px);
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type="submit"] {
+  display: block;
+  font-size: 1em;
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  background-color: #052d68;
+  color: rgb(178, 184, 180);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #07152c;
 }
 
 form > a.botao {
-    display: block;
-    text-align: center;
-    margin-top: 0.4rem;
-    padding-top: 5px;
-    font-size: 1em;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #052d68;
-    border: 1px solid #031229;
-    border-radius: 5px;
-    text-decoration: none;
-    color: rgb(178, 184, 180);
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #052d68;
+  border: 1px solid #031229;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(178, 184, 180);
 }
 
 form > a.botao:hover {
-    background-color: #07152c;
+  background-color: #07152c;
 }
 
 form > a.botao > span {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }

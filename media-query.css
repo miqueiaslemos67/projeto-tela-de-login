@@ -20,6 +20,7 @@ Grandes telas: acima de 1200px
 
   section#login {
     width: 80vw;
+    height: 280px;
   }
 
   section#login > div#imagem {
@@ -31,6 +32,14 @@ Grandes telas: acima de 1200px
   section#login > div#formulario {
     float: right;
     width: 70%;
+  }
+
+  form > a.botao {
+    width: 200px;
+  }
+
+  form > input[type="submit"] {
+    width: 200px;
   }
 }
 
@@ -61,5 +70,13 @@ Grandes telas: acima de 1200px
 
   div#formulario > p {
     font-size: 1.2em;
+  }
+
+  form > a.botao {
+    width: 200px;
+  }
+
+  form > input[type="submit"] {
+    width: 200px;
   }
 }
